@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fubuki - Multi-Purpose Discord Bot</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <style>
+        body {
+            background-color: #2C2F33;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #23272A;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            color: #00BFFF;
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #FFFFFF;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #00BFFF;
+            transition: width 0.3s;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        section {
+            padding: 40px 20px;
+            flex: 1;
+        }
+        h2 {
+            color: #00BFFF;
+            font-size: 2em;
+            font-weight: 700;
+            border-bottom: 2px solid #00BFFF;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        p, ul {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #3C3F43;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #00BFFF;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.1em;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: 500;
+        }
+        .button:hover {
+            background-color: #0099cc;
+        }
+        .changelog {
+            background-color: #3C3F43;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #23272A;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fubuki</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#changelog">Changelog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Welcome to Fubuki</h2>
+        <p>Fubuki is an intuitive multi-purpose Discord bot designed to enhance your server experience. With features like our custom submissions system and advanced message editing, Fubuki is both powerful and easy to use.</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&scope=bot" class="button">Invite Fubuki to Your Server</a>
+    </section>
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Submissions System:</strong> Create custom forms for your members to submit.</li>
+            <li><strong>Advanced Message Editing:</strong> Add advanced buttons to your messages with ease.</li>
+        </ul>
+    </section>
+    <section id="changelog">
+        <h2>Changelog</h2>
+        <div class="changelog">
+            <p><strong>v1.0.0</strong> - Initial release with submissions system and message editing features.</p>
+            <!-- Add more changelog entries as needed -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For support or inquiries, please reach out to our team via <a href="mailto:support@fubukiapp.com">support@fubukiapp.com</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Fubuki. All rights reserved.</p>
+    </footer>
+</body>
+</html>
